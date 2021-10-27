@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		B230BE462729E7B20047A9AF /* PushupTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE452729E7B20047A9AF /* PushupTrackerApp.swift */; };
-		B230BE482729E7B20047A9AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE472729E7B20047A9AF /* ContentView.swift */; };
+		B230BE482729E7B20047A9AF /* PushupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE472729E7B20047A9AF /* PushupView.swift */; };
 		B230BE4A2729E7B30047A9AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B230BE492729E7B30047A9AF /* Assets.xcassets */; };
 		B230BE4D2729E7B30047A9AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B230BE4C2729E7B30047A9AF /* Preview Assets.xcassets */; };
+		B230BE542729E8370047A9AF /* PushupTally.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE532729E8370047A9AF /* PushupTally.swift */; };
+		B230BE562729E9240047A9AF /* PushupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE552729E9240047A9AF /* PushupViewModel.swift */; };
+		B230BE582729EDC30047A9AF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE572729EDC30047A9AF /* WebView.swift */; };
+		B230BE5A272A06450047A9AF /* PushupRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE59272A06450047A9AF /* PushupRecordView.swift */; };
+		B230BE5C272A07FB0047A9AF /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE5B272A07FB0047A9AF /* DateFormatter.swift */; };
+		B230BE5E272A0A2E0047A9AF /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE5D272A0A2E0047A9AF /* AddWorkoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B230BE422729E7B20047A9AF /* PushupTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushupTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B230BE452729E7B20047A9AF /* PushupTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupTrackerApp.swift; sourceTree = "<group>"; };
-		B230BE472729E7B20047A9AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B230BE472729E7B20047A9AF /* PushupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupView.swift; sourceTree = "<group>"; };
 		B230BE492729E7B30047A9AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B230BE4C2729E7B30047A9AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B230BE532729E8370047A9AF /* PushupTally.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupTally.swift; sourceTree = "<group>"; };
+		B230BE552729E9240047A9AF /* PushupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupViewModel.swift; sourceTree = "<group>"; };
+		B230BE572729EDC30047A9AF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		B230BE59272A06450047A9AF /* PushupRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupRecordView.swift; sourceTree = "<group>"; };
+		B230BE5B272A07FB0047A9AF /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		B230BE5D272A0A2E0047A9AF /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +64,15 @@
 			isa = PBXGroup;
 			children = (
 				B230BE452729E7B20047A9AF /* PushupTrackerApp.swift */,
-				B230BE472729E7B20047A9AF /* ContentView.swift */,
+				B230BE472729E7B20047A9AF /* PushupView.swift */,
 				B230BE492729E7B30047A9AF /* Assets.xcassets */,
 				B230BE4B2729E7B30047A9AF /* Preview Content */,
+				B230BE532729E8370047A9AF /* PushupTally.swift */,
+				B230BE552729E9240047A9AF /* PushupViewModel.swift */,
+				B230BE572729EDC30047A9AF /* WebView.swift */,
+				B230BE59272A06450047A9AF /* PushupRecordView.swift */,
+				B230BE5B272A07FB0047A9AF /* DateFormatter.swift */,
+				B230BE5D272A0A2E0047A9AF /* AddWorkoutView.swift */,
 			);
 			path = PushupTracker;
 			sourceTree = "<group>";
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B230BE482729E7B20047A9AF /* ContentView.swift in Sources */,
+				B230BE542729E8370047A9AF /* PushupTally.swift in Sources */,
+				B230BE582729EDC30047A9AF /* WebView.swift in Sources */,
+				B230BE5A272A06450047A9AF /* PushupRecordView.swift in Sources */,
+				B230BE5C272A07FB0047A9AF /* DateFormatter.swift in Sources */,
+				B230BE562729E9240047A9AF /* PushupViewModel.swift in Sources */,
+				B230BE482729E7B20047A9AF /* PushupView.swift in Sources */,
+				B230BE5E272A0A2E0047A9AF /* AddWorkoutView.swift in Sources */,
 				B230BE462729E7B20047A9AF /* PushupTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
