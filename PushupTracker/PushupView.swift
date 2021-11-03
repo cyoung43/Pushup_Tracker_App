@@ -10,19 +10,22 @@ import SwiftUI
 struct PushupView: View {
     private struct HundredPushups {
         static let url = "https://hundredpushups.com".url
+        static let pushupsForKyle = "https://bit.ly/PushupsForKyle".url
     }
     
     var body: some View {
         TabView {
             PushupRecordView(pushupViewModel: PushupViewModel())
                 .tabItem {
-                    Image(systemName: "list.dash")
-                    Text("Pushups")
+                    Label("Pushups", systemImage: "list.dash")
+                }
+            WebView(request: URLRequest(url: HundredPushups.pushupsForKyle))
+                .tabItem {
+                    Label("Pushups for Kyle", systemImage: "person")
                 }
             WebView(request: URLRequest(url: HundredPushups.url))
                 .tabItem {
-                    Image(systemName: "globe")
-                    Text("HundredPushups.com")
+                    Label("HundredPushups", systemImage: "globe")
                 }
         }
     }

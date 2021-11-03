@@ -17,6 +17,8 @@
 		B230BE5A272A06450047A9AF /* PushupRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE59272A06450047A9AF /* PushupRecordView.swift */; };
 		B230BE5C272A07FB0047A9AF /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE5B272A07FB0047A9AF /* DateFormatter.swift */; };
 		B230BE5E272A0A2E0047A9AF /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE5D272A0A2E0047A9AF /* AddWorkoutView.swift */; };
+		B230BE60272A1A460047A9AF /* HW7.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE5F272A1A460047A9AF /* HW7.swift */; };
+		B2E517FC273346D0003DA5F8 /* MessageComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E517FB273346D0003DA5F8 /* MessageComposeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		B230BE59272A06450047A9AF /* PushupRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupRecordView.swift; sourceTree = "<group>"; };
 		B230BE5B272A07FB0047A9AF /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		B230BE5D272A0A2E0047A9AF /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
+		B230BE5F272A1A460047A9AF /* HW7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW7.swift; sourceTree = "<group>"; };
+		B2E517FB273346D0003DA5F8 /* MessageComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				B230BE59272A06450047A9AF /* PushupRecordView.swift */,
 				B230BE5B272A07FB0047A9AF /* DateFormatter.swift */,
 				B230BE5D272A0A2E0047A9AF /* AddWorkoutView.swift */,
+				B230BE5F272A1A460047A9AF /* HW7.swift */,
+				B2E517FB273346D0003DA5F8 /* MessageComposeView.swift */,
 			);
 			path = PushupTracker;
 			sourceTree = "<group>";
@@ -160,7 +166,9 @@
 				B230BE5A272A06450047A9AF /* PushupRecordView.swift in Sources */,
 				B230BE5C272A07FB0047A9AF /* DateFormatter.swift in Sources */,
 				B230BE562729E9240047A9AF /* PushupViewModel.swift in Sources */,
+				B2E517FC273346D0003DA5F8 /* MessageComposeView.swift in Sources */,
 				B230BE482729E7B20047A9AF /* PushupView.swift in Sources */,
+				B230BE60272A1A460047A9AF /* HW7.swift in Sources */,
 				B230BE5E272A0A2E0047A9AF /* AddWorkoutView.swift in Sources */,
 				B230BE462729E7B20047A9AF /* PushupTrackerApp.swift in Sources */,
 			);

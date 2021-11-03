@@ -19,9 +19,11 @@ struct AddWorkoutView: View {
         NavigationView {
             Form {
                 HStack {
-                    Text("Number of Pushups")
-                    TextField("Number of Pushups", text: $numberOfPushups)
+                    Text("Number of Pushups").layoutPriority(100)
+                    Spacer()
+                    TextField("#", text: $numberOfPushups)
                         .keyboardType(.numbersAndPunctuation)
+                        .multilineTextAlignment(.trailing)
                 }
                 DatePicker(selection: $date, displayedComponents: .date) {
                     Text("Date")

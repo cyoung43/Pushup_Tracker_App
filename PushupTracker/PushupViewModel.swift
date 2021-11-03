@@ -11,6 +11,7 @@ import Foundation
 class PushupViewModel: ObservableObject {
     private struct Key {
         static let tallies = "tallies"
+        static let maxDailyPushupsForKyle = 50
     }
     
     @Published var pushupTallies: [PushupTally] = []
@@ -36,10 +37,15 @@ class PushupViewModel: ObservableObject {
     }
     
     // MARK: - Model Access
+    
     var totalCount: Int {
         pushupTallies.reduce(0) {
             $0 + $1.count
         }
+    }
+    
+    var pushupsThatCount: Int {
+        pushupTallies.reduce(0) { $0 + min($1.count, Key.maxDailyPushupsForKyle)}
     }
     
     // MARK: - Helpers
