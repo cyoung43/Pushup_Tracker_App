@@ -14,26 +14,27 @@ class PushupViewModel: ObservableObject {
         static let maxDailyPushupsForKyle = 50
     }
     
-    @Published var pushupTallies: [PushupTally] = []
-    
-    init() {
-        if let jsonData = UserDefaults.standard.object(forKey: Key.tallies) as? Data {
-            let decoder = JSONDecoder()
-            
-            // .self on type expression refers to the actual type
-            if let tallies = try? decoder.decode([PushupTally].self, from: jsonData) {
-                pushupTallies = tallies.sorted {
-                    $0.date < $1.date
-                }
-            }
-        }
-    }
+    @Published var pushupTallyHistory = PushupTallyHistory()
     
     // MARK: - User Intents
     
+    var pushupTallies: [PushupTally] {
+        pushupTallyHistory.pushupTallies
+    }
+    
     func append(_ pushupTally: PushupTally) {
-        pushupTallies.append(pushupTally)
-        save()
+        pushupTallyHistory.addPushupTally(pushupTally)
+        pushupTallyHistory.save()
+    }
+    
+    func removeTally(at index: Int) {
+        pushupTallyHistory.remove(at: index)
+        pushupTallyHistory.save()
+    }
+    
+    func update(_ count: Int, for tally: PushupTally) {
+        pushupTallyHistory.update(count, for: tally)
+        pushupTallyHistory.save()
     }
     
     // MARK: - Model Access

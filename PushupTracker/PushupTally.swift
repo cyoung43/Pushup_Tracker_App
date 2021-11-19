@@ -13,3 +13,11 @@ struct PushupTally: Identifiable, Codable {
     var count: Int
     var date: Date
 }
+
+extension PushupTally {
+    var dateString: String {
+        PushupDateFormatter.shared.dateFormatter.string(from: date)
+    }
+}
+
+

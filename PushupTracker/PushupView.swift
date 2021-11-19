@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PushupView: View {
-    private struct HundredPushups {
+    private struct ConstURL {
         static let url = "https://hundredpushups.com".url
         static let pushupsForKyle = "https://bit.ly/PushupsForKyle".url
     }
@@ -19,11 +19,11 @@ struct PushupView: View {
                 .tabItem {
                     Label("Pushups", systemImage: "list.dash")
                 }
-            WebView(request: URLRequest(url: HundredPushups.pushupsForKyle))
+            PushupsForKyleView(externalUrl: ConstURL.pushupsForKyle)
                 .tabItem {
                     Label("Pushups for Kyle", systemImage: "person")
                 }
-            WebView(request: URLRequest(url: HundredPushups.url))
+            WebView(request: URLRequest(url: ConstURL.url))
                 .tabItem {
                     Label("HundredPushups", systemImage: "globe")
                 }

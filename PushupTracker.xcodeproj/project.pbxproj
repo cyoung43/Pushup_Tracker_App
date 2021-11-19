@@ -18,6 +18,10 @@
 		B230BE5C272A07FB0047A9AF /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE5B272A07FB0047A9AF /* DateFormatter.swift */; };
 		B230BE5E272A0A2E0047A9AF /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE5D272A0A2E0047A9AF /* AddWorkoutView.swift */; };
 		B230BE60272A1A460047A9AF /* HW7.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE5F272A1A460047A9AF /* HW7.swift */; };
+		B29229AC2745C17D00D401D4 /* WorkoutReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229AB2745C17D00D401D4 /* WorkoutReport.swift */; };
+		B29229AE2745C6B700D401D4 /* PushupsForKyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229AD2745C6B700D401D4 /* PushupsForKyleView.swift */; };
+		B29229B02745E96600D401D4 /* EditableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229AF2745E96600D401D4 /* EditableText.swift */; };
+		B29229B22746EAA600D401D4 /* PushupTallyHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229B12746EAA600D401D4 /* PushupTallyHistory.swift */; };
 		B2E517FC273346D0003DA5F8 /* MessageComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E517FB273346D0003DA5F8 /* MessageComposeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,10 @@
 		B230BE5B272A07FB0047A9AF /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		B230BE5D272A0A2E0047A9AF /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
 		B230BE5F272A1A460047A9AF /* HW7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW7.swift; sourceTree = "<group>"; };
+		B29229AB2745C17D00D401D4 /* WorkoutReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutReport.swift; sourceTree = "<group>"; };
+		B29229AD2745C6B700D401D4 /* PushupsForKyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupsForKyleView.swift; sourceTree = "<group>"; };
+		B29229AF2745E96600D401D4 /* EditableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableText.swift; sourceTree = "<group>"; };
+		B29229B12746EAA600D401D4 /* PushupTallyHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupTallyHistory.swift; sourceTree = "<group>"; };
 		B2E517FB273346D0003DA5F8 /* MessageComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +87,10 @@
 				B230BE5D272A0A2E0047A9AF /* AddWorkoutView.swift */,
 				B230BE5F272A1A460047A9AF /* HW7.swift */,
 				B2E517FB273346D0003DA5F8 /* MessageComposeView.swift */,
+				B29229AB2745C17D00D401D4 /* WorkoutReport.swift */,
+				B29229AD2745C6B700D401D4 /* PushupsForKyleView.swift */,
+				B29229AF2745E96600D401D4 /* EditableText.swift */,
+				B29229B12746EAA600D401D4 /* PushupTallyHistory.swift */,
 			);
 			path = PushupTracker;
 			sourceTree = "<group>";
@@ -161,15 +173,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29229B22746EAA600D401D4 /* PushupTallyHistory.swift in Sources */,
 				B230BE542729E8370047A9AF /* PushupTally.swift in Sources */,
 				B230BE582729EDC30047A9AF /* WebView.swift in Sources */,
 				B230BE5A272A06450047A9AF /* PushupRecordView.swift in Sources */,
 				B230BE5C272A07FB0047A9AF /* DateFormatter.swift in Sources */,
 				B230BE562729E9240047A9AF /* PushupViewModel.swift in Sources */,
+				B29229B02745E96600D401D4 /* EditableText.swift in Sources */,
 				B2E517FC273346D0003DA5F8 /* MessageComposeView.swift in Sources */,
 				B230BE482729E7B20047A9AF /* PushupView.swift in Sources */,
+				B29229AC2745C17D00D401D4 /* WorkoutReport.swift in Sources */,
 				B230BE60272A1A460047A9AF /* HW7.swift in Sources */,
 				B230BE5E272A0A2E0047A9AF /* AddWorkoutView.swift in Sources */,
+				B29229AE2745C6B700D401D4 /* PushupsForKyleView.swift in Sources */,
 				B230BE462729E7B20047A9AF /* PushupTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,7 @@ struct PushupRecordView: View {
     @ObservedObject var pushupViewModel: PushupViewModel
     @State private var showAddWorkoutModal = false
     @State private var showReportTotalModal = false
+    @State private var editMode: EditMode = .inactive
     
     private struct Constants {
         static let richardCellPhone = "801-360-1066"
@@ -20,16 +21,16 @@ struct PushupRecordView: View {
         NavigationView {
             Form {
                 totalBody
-                missionBody
                 individualWorkoutsBody
                 
             }
             .navigationBarTitle(Text("Pushup Tracker"))
-            .navigationBarItems(trailing: Button(action: {
+            .navigationBarItems(leading: Button(action: {
                 showAddWorkoutModal = true
             }, label: {
                 Image(systemName: "plus")
-            }))
+            }), trailing: EditButton())
+            .environment(\.editMode, $editMode)
             .navigationBarTitleDisplayMode(.inline)
         }
         .sheet(isPresented: $showAddWorkoutModal) {
@@ -49,10 +50,18 @@ struct PushupRecordView: View {
             List {
                 ForEach(pushupViewModel.pushupTallies) { pushupTally in
                     HStack {
-                        Text("\(PushupDateFormatter.shared.dateFormatter.string(from: pushupTally.date))")
+                        Text("\(pushupTally.dateString)")
+                            .layoutPriority(1)
                         Spacer()
-                        Text("\(pushupTally.count)")
+                        EditableText(text: "\(pushupTally.count)", isEditing: editMode.isEditing, textAlignment: .trailing) { updatedText in
+                            if let count = Int(updatedText) {
+                                pushupViewModel.update(count, for: pushupTally)
+                            }
+                        }
                     }
+                }
+                .onDelete { indexSet in
+                    indexSet.forEach { pushupViewModel.removeTally(at: $0) }
                 }
             }
         }
@@ -75,16 +84,6 @@ struct PushupRecordView: View {
             } label: {
                 Label("Report", systemImage: "square.and.arrow.up")
             }
-        }
-    }
-    
-    var missionBody: some View {
-        Section(header: Text("The Mission and Goal")) {
-            Text("""
-                Do 100,000 pushups for Kyle before November 10th. \
-            Contact Richard at (richlamx@hotmail.com) or 801-360-1066.
-            """)
-                
         }
     }
 }
