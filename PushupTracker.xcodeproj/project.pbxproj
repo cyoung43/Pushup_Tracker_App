@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92C1C25CA341A6F46647AD81 /* libPods-PushupTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8517660400ADB4FEA7B3E0 /* libPods-PushupTracker.a */; };
 		B230BE462729E7B20047A9AF /* PushupTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE452729E7B20047A9AF /* PushupTrackerApp.swift */; };
 		B230BE482729E7B20047A9AF /* PushupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B230BE472729E7B20047A9AF /* PushupView.swift */; };
 		B230BE4A2729E7B30047A9AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B230BE492729E7B30047A9AF /* Assets.xcassets */; };
@@ -22,10 +23,13 @@
 		B29229AE2745C6B700D401D4 /* PushupsForKyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229AD2745C6B700D401D4 /* PushupsForKyleView.swift */; };
 		B29229B02745E96600D401D4 /* EditableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229AF2745E96600D401D4 /* EditableText.swift */; };
 		B29229B22746EAA600D401D4 /* PushupTallyHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229B12746EAA600D401D4 /* PushupTallyHistory.swift */; };
+		B29229B427480AC700D401D4 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229B327480AC700D401D4 /* DatabaseHelper.swift */; };
 		B2E517FC273346D0003DA5F8 /* MessageComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E517FB273346D0003DA5F8 /* MessageComposeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14A033F9F7667978B4BC178D /* Pods-PushupTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushupTracker.release.xcconfig"; path = "Target Support Files/Pods-PushupTracker/Pods-PushupTracker.release.xcconfig"; sourceTree = "<group>"; };
+		1C8517660400ADB4FEA7B3E0 /* libPods-PushupTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PushupTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B230BE422729E7B20047A9AF /* PushupTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushupTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B230BE452729E7B20047A9AF /* PushupTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupTrackerApp.swift; sourceTree = "<group>"; };
 		B230BE472729E7B20047A9AF /* PushupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupView.swift; sourceTree = "<group>"; };
@@ -42,7 +46,9 @@
 		B29229AD2745C6B700D401D4 /* PushupsForKyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupsForKyleView.swift; sourceTree = "<group>"; };
 		B29229AF2745E96600D401D4 /* EditableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableText.swift; sourceTree = "<group>"; };
 		B29229B12746EAA600D401D4 /* PushupTallyHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupTallyHistory.swift; sourceTree = "<group>"; };
+		B29229B327480AC700D401D4 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 		B2E517FB273346D0003DA5F8 /* MessageComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposeView.swift; sourceTree = "<group>"; };
+		E7AC8F1E4653D5CC9C31648F /* Pods-PushupTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushupTracker.debug.xcconfig"; path = "Target Support Files/Pods-PushupTracker/Pods-PushupTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,17 +56,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C1C25CA341A6F46647AD81 /* libPods-PushupTracker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2912EEF3033F27373501BADC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7AC8F1E4653D5CC9C31648F /* Pods-PushupTracker.debug.xcconfig */,
+				14A033F9F7667978B4BC178D /* Pods-PushupTracker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5424111BA88D8286BA19E55B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C8517660400ADB4FEA7B3E0 /* libPods-PushupTracker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B230BE392729E7B20047A9AF = {
 			isa = PBXGroup;
 			children = (
 				B230BE442729E7B20047A9AF /* PushupTracker */,
 				B230BE432729E7B20047A9AF /* Products */,
+				2912EEF3033F27373501BADC /* Pods */,
+				5424111BA88D8286BA19E55B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +114,7 @@
 				B230BE5F272A1A460047A9AF /* HW7.swift */,
 				B2E517FB273346D0003DA5F8 /* MessageComposeView.swift */,
 				B29229AB2745C17D00D401D4 /* WorkoutReport.swift */,
+				B29229B327480AC700D401D4 /* DatabaseHelper.swift */,
 				B29229AD2745C6B700D401D4 /* PushupsForKyleView.swift */,
 				B29229AF2745E96600D401D4 /* EditableText.swift */,
 				B29229B12746EAA600D401D4 /* PushupTallyHistory.swift */,
@@ -110,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B230BE502729E7B30047A9AF /* Build configuration list for PBXNativeTarget "PushupTracker" */;
 			buildPhases = (
+				F53069840941739D3C2842C8 /* [CP] Check Pods Manifest.lock */,
 				B230BE3E2729E7B20047A9AF /* Sources */,
 				B230BE3F2729E7B20047A9AF /* Frameworks */,
 				B230BE402729E7B20047A9AF /* Resources */,
@@ -168,12 +196,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F53069840941739D3C2842C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushupTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B230BE3E2729E7B20047A9AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B29229B22746EAA600D401D4 /* PushupTallyHistory.swift in Sources */,
+				B29229B427480AC700D401D4 /* DatabaseHelper.swift in Sources */,
 				B230BE542729E8370047A9AF /* PushupTally.swift in Sources */,
 				B230BE582729EDC30047A9AF /* WebView.swift in Sources */,
 				B230BE5A272A06450047A9AF /* PushupRecordView.swift in Sources */,
@@ -311,6 +365,7 @@
 		};
 		B230BE512729E7B30047A9AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7AC8F1E4653D5CC9C31648F /* Pods-PushupTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -340,6 +395,7 @@
 		};
 		B230BE522729E7B30047A9AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A033F9F7667978B4BC178D /* Pods-PushupTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

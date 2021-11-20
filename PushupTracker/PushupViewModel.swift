@@ -18,44 +18,38 @@ class PushupViewModel: ObservableObject {
     
     // MARK: - User Intents
     
-    var pushupTallies: [PushupTally] {
-        pushupTallyHistory.pushupTallies
+    var workoutReports: [WorkoutReport] {
+        DatabaseHelper.shared.workoutRecords()
     }
     
-    func append(_ pushupTally: PushupTally) {
-        pushupTallyHistory.addPushupTally(pushupTally)
-        pushupTallyHistory.save()
+    func append(_ workoutReport: WorkoutReport) {
+        DatabaseHelper.shared.saveWorkoutReport(workoutReport)
+        objectWillChange.send()
     }
     
-    func removeTally(at index: Int) {
-        pushupTallyHistory.remove(at: index)
-        pushupTallyHistory.save()
+    func removeWorkout(at index: Int) {
+        if index >= 0 && index < workoutReports.count {
+            DatabaseHelper.shared.deleteWorkoutReport(workoutReports[index])
+            objectWillChange.send()
+        }
     }
     
-    func update(_ count: Int, for tally: PushupTally) {
-        pushupTallyHistory.update(count, for: tally)
-        pushupTallyHistory.save()
+    func update(_ count: Int, for workoutReport: WorkoutReport) {
+        var updatedReport = workoutReport
+        updatedReport.count = count
+        DatabaseHelper.shared.updateWorkoutReport(updatedReport)
+        objectWillChange.send()
     }
     
     // MARK: - Model Access
     
     var totalCount: Int {
-        pushupTallies.reduce(0) {
+        workoutReports.reduce(0) {
             $0 + $1.count
         }
     }
     
     var pushupsThatCount: Int {
-        pushupTallies.reduce(0) { $0 + min($1.count, Key.maxDailyPushupsForKyle)}
-    }
-    
-    // MARK: - Helpers
-    
-    func save() {
-        let encoder = JSONEncoder()
-        
-        if let jsonData = try? encoder.encode(pushupTallies) {
-            UserDefaults.standard.set(jsonData, forKey: Key.tallies)
-        }
+        workoutReports.reduce(0) { $0 + min($1.count, Key.maxDailyPushupsForKyle)}
     }
 }

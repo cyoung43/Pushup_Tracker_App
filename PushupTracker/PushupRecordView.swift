@@ -48,20 +48,20 @@ struct PushupRecordView: View {
     var individualWorkoutsBody: some View {
         Section(header: Text("Individual Workouts")) {
             List {
-                ForEach(pushupViewModel.pushupTallies) { pushupTally in
+                ForEach(pushupViewModel.workoutReports) { workoutReport in
                     HStack {
-                        Text("\(pushupTally.dateString)")
+                        Text("\(workoutReport.dateString)")
                             .layoutPriority(1)
                         Spacer()
-                        EditableText(text: "\(pushupTally.count)", isEditing: editMode.isEditing, textAlignment: .trailing) { updatedText in
+                        EditableText(text: "\(workoutReport.count)", isEditing: editMode.isEditing, textAlignment: .trailing) { updatedText in
                             if let count = Int(updatedText) {
-                                pushupViewModel.update(count, for: pushupTally)
+                                pushupViewModel.update(count, for: workoutReport)
                             }
                         }
                     }
                 }
                 .onDelete { indexSet in
-                    indexSet.forEach { pushupViewModel.removeTally(at: $0) }
+                    indexSet.forEach { pushupViewModel.removeWorkout(at: $0) }
                 }
             }
         }

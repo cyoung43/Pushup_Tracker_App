@@ -48,7 +48,7 @@ struct AddWorkoutView: View {
         
         if let pushupCount = Int(number) {
             if pushupCount > 0 {
-                pushupViewModel.append(PushupTally(count: pushupCount, date: date))
+                pushupViewModel.append(WorkoutReport(count: pushupCount, date: date))
             }
         }
     }
