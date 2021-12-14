@@ -27,6 +27,10 @@ struct PushupView: View {
                 .tabItem {
                     Label("HundredPushups", systemImage: "globe")
                 }
+            NotificationsView()
+                .tabItem {
+                    Label("Notifications", systemImage: "bell.fill")
+                }
         }
     }
 }

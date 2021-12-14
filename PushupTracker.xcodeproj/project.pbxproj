@@ -24,6 +24,8 @@
 		B29229B02745E96600D401D4 /* EditableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229AF2745E96600D401D4 /* EditableText.swift */; };
 		B29229B22746EAA600D401D4 /* PushupTallyHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229B12746EAA600D401D4 /* PushupTallyHistory.swift */; };
 		B29229B427480AC700D401D4 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29229B327480AC700D401D4 /* DatabaseHelper.swift */; };
+		B29BD92427682F1D0025C2E0 /* WeekDayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BD92327682F1D0025C2E0 /* WeekDayPicker.swift */; };
+		B29BD926276831990025C2E0 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BD925276831990025C2E0 /* NotificationsView.swift */; };
 		B2E517FC273346D0003DA5F8 /* MessageComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E517FB273346D0003DA5F8 /* MessageComposeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		B29229AF2745E96600D401D4 /* EditableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableText.swift; sourceTree = "<group>"; };
 		B29229B12746EAA600D401D4 /* PushupTallyHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupTallyHistory.swift; sourceTree = "<group>"; };
 		B29229B327480AC700D401D4 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		B29BD92327682F1D0025C2E0 /* WeekDayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayPicker.swift; sourceTree = "<group>"; };
+		B29BD925276831990025C2E0 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		B2E517FB273346D0003DA5F8 /* MessageComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageComposeView.swift; sourceTree = "<group>"; };
 		E7AC8F1E4653D5CC9C31648F /* Pods-PushupTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushupTracker.debug.xcconfig"; path = "Target Support Files/Pods-PushupTracker/Pods-PushupTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +122,8 @@
 				B29229AD2745C6B700D401D4 /* PushupsForKyleView.swift */,
 				B29229AF2745E96600D401D4 /* EditableText.swift */,
 				B29229B12746EAA600D401D4 /* PushupTallyHistory.swift */,
+				B29BD92327682F1D0025C2E0 /* WeekDayPicker.swift */,
+				B29BD925276831990025C2E0 /* NotificationsView.swift */,
 			);
 			path = PushupTracker;
 			sourceTree = "<group>";
@@ -226,12 +232,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29BD926276831990025C2E0 /* NotificationsView.swift in Sources */,
 				B29229B22746EAA600D401D4 /* PushupTallyHistory.swift in Sources */,
 				B29229B427480AC700D401D4 /* DatabaseHelper.swift in Sources */,
 				B230BE542729E8370047A9AF /* PushupTally.swift in Sources */,
 				B230BE582729EDC30047A9AF /* WebView.swift in Sources */,
 				B230BE5A272A06450047A9AF /* PushupRecordView.swift in Sources */,
 				B230BE5C272A07FB0047A9AF /* DateFormatter.swift in Sources */,
+				B29BD92427682F1D0025C2E0 /* WeekDayPicker.swift in Sources */,
 				B230BE562729E9240047A9AF /* PushupViewModel.swift in Sources */,
 				B29229B02745E96600D401D4 /* EditableText.swift in Sources */,
 				B2E517FC273346D0003DA5F8 /* MessageComposeView.swift in Sources */,
